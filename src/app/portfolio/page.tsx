@@ -15,7 +15,7 @@ export default function Portfolio() {
                 </div>
                 <div className="max-w-[850px] mx-auto">
                     <p className='big-paragraph'>Cada imagen cuenta una historia, y en mi portafolio encontrarás el reflejo de experiencias auténticas, marcas con propósito y momentos irrepetibles. Ya sea para tu imagen personal, tus redes sociales, tu empresa, tu evento o inmortalizar tus logros,  aquí verás lo que podemos crear juntos: contenido visual que conecta y emociona.</p>
-                    <p className='big-paragraph'>Every image tells a story, and in my portfolio you will find the reflection of authentic experiences, purposeful brands and unrepeatable moments. Whether it's for your personal image, your social media, your company, your event or to immortalize your achievements, here you'll see what we can create together: visual content that connects and excites.</p>
+                    <p className='big-paragraph'>Every image tells a story, and in my portfolio you will find the reflection of authentic experiences, purposeful brands and unrepeatable moments. Whether it&apos;s for your personal image, your social media, your company, your event or to immortalize your achievements, here you&apos;ll see what we can create together: visual content that connects and excites.</p>
                 </div>
             </section>
 

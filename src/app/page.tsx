@@ -22,7 +22,13 @@ export default function Home() {
                 <h2 className="text-3xl md:text-4xl pl-[15px]">¿Quién soy?</h2>
               </div>
               <div className="w-[60%] md:hidden">
-                <img src="/elon-aparicio.jpg" alt="Elon Aparicio" className="rounded-full" />
+                <Image 
+                  src="/elon-aparicio.jpg" 
+                  alt="Elon Aparicio" 
+                  width={1500}
+                  height={2250}
+                  className="rounded-full" 
+                />
               </div>
             </div>
             <div className="py-2 px-8">
@@ -33,7 +39,13 @@ export default function Home() {
             </div>
           </div>
           <div className="hidden md:block bg-white md:h-full rounded-full overflow-hidden">
-            <img src="/elon-aparicio.jpg" alt="Elon Aparicio" className='w-full h-full object-cover' />
+            <Image 
+              src="/elon-aparicio.jpg" 
+              alt="Elon Aparicio" 
+              width={1500}
+              height={2250}
+              className='w-full h-full object-cover' 
+            />
           </div>
         </div>
       </section>
