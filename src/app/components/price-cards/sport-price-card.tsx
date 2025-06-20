@@ -12,7 +12,7 @@ export default function SportPriceCard({ urlImage, name, description, cityPrice,
     return (
         <div className={`w-full flex flex-col justify-start items-center gap-4 md:gap-8`}>
             <div className='w-full grid grid-cols-2 grid-rows-1 gap-4 md:grid-cols-1'>
-                <div className='w-full h-[325px] bg-gray-500'>
+                <div className='w-full h-[325px] bg-[#f8f8f8]'>
                     <Image 
                         src={urlImage} 
                         alt={name} 

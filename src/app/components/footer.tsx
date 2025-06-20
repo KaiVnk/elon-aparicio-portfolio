@@ -6,8 +6,12 @@ import React from 'react';
 export default function Footer() {
     const [isPortfolioOpen, setIsPortfolioOpen] = React.useState(false);
 
-    const togglePortfolio = () => {
-        setIsPortfolioOpen(!isPortfolioOpen);
+    const handleMouseEnter = () => {
+        setIsPortfolioOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsPortfolioOpen(false);
     };
 
     return (
@@ -16,27 +20,29 @@ export default function Footer() {
                 <div className='text-center'>
                     <ul className='flex flex-col gap-[15px] md:flex-row md:items-center md:gap-[50px]'>
                         <li><Link href="/" className='link'>Inicio</Link></li>
-                        <li className='relative'>
-                            <div className='link flex justify-center items-center'>
+                        <li
+                            className='relative'
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
+                        >
+                            <div className='link flex items-center'>
                                 <Link href="/portfolio">Portafolio</Link>
                                 <button className="cursor-pointer">
                                     <Image 
                                         src={`/icons/${isPortfolioOpen ? 'keyboard-arrow-up-icon' : 'keyboard-arrow-down-icon'}.svg`}
                                         alt={isPortfolioOpen ? "Cerrar Portafolio" : "Desplegar Portafolio"} 
-                                        width={24} 
-                                        height={24} 
-                                        onClick={togglePortfolio}
-                                        className="w-[30px] h-[30px]"
+                                        width={30} 
+                                        height={30}
                                     />
                                 </button>
                             </div>
                             <ul className={`min-w-[250px] bg-transparent py-2 px-4 ${isPortfolioOpen ? 'flex' : 'hidden'} flex-col justify-center items-center gap-[10px] md:absolute md:top-[125%] md:left-[50%] md:-translate-x-[50%] md:bg-[#e5e5db]`}>
-                                <li><Link href="/portfolio/retrato" className='link'>Retrato</Link></li>
-                                <li><Link href="/portfolio/book" className='link'>Book</Link></li>
-                                <li><Link href="/portfolio/graduacion" className='link'>Graduación</Link></li>
-                                <li><Link href="/portfolio/deportes" className='link'>Deportes</Link></li>
-                                <li><Link href="/portfolio/sociales" className='link'>Sociales</Link></li>
-                                <li><Link href="/portfolio/otros-servicios" className='link'>Otros Servicios</Link></li>
+                                <div className='absolute top-[-15px] left-0 right-0 w-full h-[20px]'></div>
+                                <li><Link href="/portfolio/portraits" className='link'>Retrato</Link></li>
+                                <li><Link href="/portfolio/books" className='link'>Book</Link></li>
+                                <li><Link href="/portfolio/graduations" className='link'>Graduación</Link></li>
+                                <li><Link href="/portfolio/sports" className='link'>Deportes</Link></li>
+                                <li><Link href="/portfolio/other-services" className='link'>Otros Servicios</Link></li>
                             </ul>
                         </li>
                         <li><Link href="/investment" className='link'>Inversión</Link></li>
@@ -50,9 +56,8 @@ export default function Footer() {
                         <Image 
                             src="/icons/instagram-icon.png" 
                             alt="Instagram" 
-                            width={24} 
-                            height={24} 
-                            className='w-[20px] h-[20px]'
+                            width={20} 
+                            height={20} 
                         />
                     </Link>
                 </div>

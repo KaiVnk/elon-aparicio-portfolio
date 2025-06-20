@@ -12,7 +12,7 @@ export default function BookPriceCard({ urlImage, name, description, price, dire
     return (
         <div className={`flex flex-col justify-start items-center gap-4 md:gap-8`}>
             <div className={`w-full flex ${direction} gap-4 md:grid-cols-1`}>
-                <div className='w-full max-h-[275px] bg-gray-100'>
+                <div className='w-full max-h-[275px] bg-[#f8f8f8]'>
                     <Image 
                         src={urlImage} 
                         alt={name} 

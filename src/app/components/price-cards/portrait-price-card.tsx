@@ -12,7 +12,7 @@ export default function PortraitPriceCard({ urlImage, name, price, description, 
     return (
         <div className={`w-full max-w-[1250px] flex flex-col justify-start items-center ${direction} gap-4 mx-auto md:gap-8 lg:gap-12`}>
             <div className='grid grid-cols-2 grid-rows-1 gap-4 md:grid-cols-1 md:w-[40%]'>
-                <div className='w-full h-[300px] md:h-[550px] bg-gray-500'>
+                <div className='w-full h-[300px] md:h-[550px] bg-[#f8f8f8]'>
                     <Image 
                         src={urlImage} 
                         alt={name} 

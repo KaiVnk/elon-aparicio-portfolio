@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function Form() {
     return (
-        <section className="relative py-[50px] px-[15px] bg-white">
+        <section className="relative py-[50px] px-[15px]">
             <Image 
-                src="/bg-form.jpg" 
+                src="/bg-form.JPG" 
                 alt="background form" 
                 width={1500}
                 height={1000}
@@ -28,10 +28,21 @@ export default function Form() {
                         Correo*
                         <input type="email" name="email" placeholder="elon.aparicio@gmail.com" required className="input-form" />
                     </label>
-                    <label className="label-form">
-                        Teléfono*
-                        <input type="tel" name="phone" placeholder="55 1234 5678" required className="input-form" />
-                    </label>
+                    <div className='flex items-center gap-[15px]'>
+                        <label className='label-form w-[20%]'>
+                            Lada*
+                            <select name="lada" required className='input-form'>
+                                <option value="+52">🇲🇽 (+52)</option>
+                                <option value="+1">🇺🇸 (+1)</option>
+                                <option value="+34">🇪🇸 (+34)</option>
+                                <option value="+54">🇦🇷 (+54)</option>
+                            </select>
+                        </label>
+                        <label className="label-form w-[80%]">
+                            Teléfono*
+                            <input type="tel" name="phone" placeholder="55 1234 5678" required className="input-form" />
+                        </label>
+                    </div>
                     <label className="label-form">
                         Mensaje*
                         <textarea name="message" placeholder="Quisiera agendar una cita para una sesión fotografíca para mi evento..." required className="input-form textarea-form"></textarea>
