@@ -2,7 +2,6 @@ import Footer from '@/app/components/footer';
 import Header from '@/app/components/header';
 import InstagramGallery from '@/app/components/instagram-gallery';
 import Image from 'next/image';
-import Link from 'next/link';
 import LinkCard from './components/link-card';
 
 export default function Home() {

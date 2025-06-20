@@ -1,7 +1,5 @@
 import Link from 'next/link'
 import Header from '@/app/components/header'
-import Footer from '@/app/components/footer'
-import InstagramGallery from '@/app/components/instagram-gallery'
 
 export default function Custom404() {
     return (
