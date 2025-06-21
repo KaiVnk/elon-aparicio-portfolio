@@ -4,7 +4,16 @@ import InstagramGallery from "@/app/components/instagram-gallery";
 import Image from "next/image";
 import SportPriceCard from "@/app/components/price-cards/sport-price-card";
 
+
 export default function Sports() {
+    const lowercaseJpgNumbers = new Set([1, 5, 11, 16]);
+    
+    const getImageSrc = (num: number): string => {
+        const ext = lowercaseJpgNumbers.has(num) ? 'jpg' : 'JPG';
+        return `/sports/n${num.toString().padStart(2, '0')}.${ext}`;
+    };
+
+
     return (
         <>
             <Header />
@@ -24,7 +33,7 @@ export default function Sports() {
                             .map(num => (
                                 <div key={num} className='h-[250px] w-full md:h-auto md:w-full bg-[#f8f8f8]'>
                                     <Image
-                                        src={`/sports/n${num.toString().padStart(2, '0')}.JPG`}
+                                        src={getImageSrc(num)}
                                         alt={`n${num}`}
                                         className='w-full h-full object-cover'
                                         width={1440}
@@ -39,7 +48,7 @@ export default function Sports() {
                             .map(num => (
                                 <div key={num} className='h-[250px] w-full md:h-auto md:w-full bg-[#f8f8f8]'>
                                     <Image
-                                        src={`/sports/n${num.toString().padStart(2, '0')}.JPG`}
+                                        src={getImageSrc(num)}
                                         alt={`n${num}`}
                                         className='w-full h-full object-cover'
                                         width={1440}

@@ -169,7 +169,7 @@ export default function Portraits() {
                         </div>
                         <div className='h-auto w-full md:h-auto md:w-full bg-[#f8f8f8]'>
                             <Image 
-                                src="/portraits/n19.JPG" 
+                                src="/portraits/n19.jpg" 
                                 alt="n19" 
                                 className='w-full h-full object-cover' 
                                 width={1440}

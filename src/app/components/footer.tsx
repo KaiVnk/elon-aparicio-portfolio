@@ -1,17 +1,39 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Footer() {
-    const [isPortfolioOpen, setIsPortfolioOpen] = React.useState(false);
+    const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768); // md: Tailwind breakpoint
+        };
+
+        handleResize(); // Inicial
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const togglePortfolio = () => {
+        if (isMobile) {
+            setIsPortfolioOpen(prev => !prev);
+        }
+    };
 
     const handleMouseEnter = () => {
-        setIsPortfolioOpen(true);
+        if (!isMobile) {
+            setIsPortfolioOpen(true);
+        }
     };
 
     const handleMouseLeave = () => {
-        setIsPortfolioOpen(false);
+        if (!isMobile) {
+            setIsPortfolioOpen(false);
+        }
     };
 
     return (
@@ -25,7 +47,7 @@ export default function Footer() {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                         >
-                            <div className='link flex items-center'>
+                            <div className='link flex justify-center items-center' onClick={togglePortfolio}>
                                 <Link href="/portfolio">Portafolio</Link>
                                 <button className="cursor-pointer">
                                     <Image 

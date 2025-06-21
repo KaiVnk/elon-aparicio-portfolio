@@ -9,7 +9,7 @@ export default function Portfolio() {
         <>
             <Header />
 
-            <section className="section" id='home'>
+            <section className="section text-center" id='home'>
                 <div className='section__headings-container'>
                     <h1 className="text-4xl mb-[5px] md:text-5xl">Mi Trabajo</h1>
                     <h2 className="text-xl">My Work</h2>

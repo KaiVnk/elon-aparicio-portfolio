@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='section'>
+      <section className='section text-center'>
         <div className='max-w-[850px] mx-auto'>
           <h2 className='text-3xl font-light mb-[15px] md:text-4xl md:mb-[20px]'>&quot;Si pudiera contar la historia con palabras, no necesitaría cargar una cámara a todos lados&quot;</h2>
           <p className='uppercase tracking-[3px] text-sm'>-Lewis Hine</p>
