@@ -144,7 +144,7 @@ export default function Home() {
             className='w-full h-full bg-[#f8f8f8] object-cover hidden md:block'
           />
           <Image 
-            src="/ricky-walias.JPG" 
+            src="/ricky-walias.jpg" 
             alt='Ricky Walias'
             width={1500} 
             height={2250}
@@ -158,7 +158,7 @@ export default function Home() {
             className='w-full h-full bg-[#f8f8f8] object-cover col-span-2 '
           />
           <Image 
-            src="/ricky-walias.JPG" 
+            src="/ricky-walias.jpg" 
             alt='Ricky Walias'
             width={1500} 
             height={2250}
