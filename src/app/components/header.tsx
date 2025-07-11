@@ -37,7 +37,7 @@ export default function Header() {
                         />
                     </Link>
                     <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden box-border fixed w-screen h-screen top-0 left-0 right-0 bg-[#e5e5db] z-100`}>
-                        <div className="w-full h-[70px] flex justify-end py-2 px-12">
+                        <div className="w-full h-[70px] flex justify-end py-2 px-8">
                             <button onClick={toggleMenu} className="cursor-pointer">
                                 <Image 
                                     src="/icons/close-icon.svg" 

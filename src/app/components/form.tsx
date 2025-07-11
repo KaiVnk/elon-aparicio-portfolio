@@ -22,30 +22,27 @@ export default function Form() {
                 >
                     <label className="label-form">
                         Nombre*
-                        <input type="text" name="name" placeholder="Elon Aparicio" required className="input-form" />
+                        <input type="text" name="name" placeholder="Elon Aparicio" required className="input-form outline-none" />
                     </label>
                     <label className="label-form">
                         Correo*
-                        <input type="email" name="email" placeholder="elon.aparicio@gmail.com" required className="input-form" />
+                        <input type="email" name="email" placeholder="elon.aparicio@gmail.com" required className="input-form outline-none" />
                     </label>
-                    <div className='flex items-center gap-[15px]'>
-                        <label className='label-form w-[20%]'>
-                            Lada*
-                            <select name="lada" required className='input-form'>
+                    <label className='label-form' htmlFor='phone'>
+                        Teléfono*
+                        <div className='flex items-center border-[1px] border-[#ccc] rounded-[5px] p-[10px]'>
+                            <select name="lada" required className='py-[9px]'>
                                 <option value="+52">🇲🇽 (+52)</option>
                                 <option value="+1">🇺🇸 (+1)</option>
                                 <option value="+34">🇪🇸 (+34)</option>
                                 <option value="+54">🇦🇷 (+54)</option>
                             </select>
-                        </label>
-                        <label className="label-form w-[80%]">
-                            Teléfono*
-                            <input type="tel" name="phone" placeholder="55 1234 5678" required className="input-form" />
-                        </label>
-                    </div>
+                            <input type="tel" name="phone" id='phone' placeholder="55 1234 5678" required className="w-full py-[5px] px-[10px] outline-none" />
+                        </div>
+                    </label>
                     <label className="label-form">
                         Mensaje*
-                        <textarea name="message" placeholder="Quisiera agendar una cita para una sesión fotografíca para mi evento..." required className="input-form textarea-form"></textarea>
+                        <textarea name="message" placeholder="Quisiera agendar una cita para una sesión fotografíca para mi evento..." required className="input-form textarea-form outline-none"></textarea>
                     </label>
                     <div className="flex justify-center items-center pt-[10px]">
                         <button type="submit" className="btn-form">Enviar mensaje</button>

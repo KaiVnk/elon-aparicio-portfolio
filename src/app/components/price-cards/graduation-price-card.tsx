@@ -6,7 +6,8 @@ interface GraduationPriceCardProps {
 
 export default function GruaduationPriceCard({ name, description, price }: GraduationPriceCardProps) {
     return (
-        <div className={`w-full h-full flex flex-col justify-start items-center gap-4 md:gap-8 bg-[#f4f2ee] p-[15px]`}>
+        // bg-[#f4f2ee]
+        <div className={`w-full h-full flex flex-col justify-start items-center gap-4 md:gap-8 bg-white p-[15px]`}>
             <div className='w-full'>
                 <h2 className='text-4xl mb-[15px] md:text-center'>{name}</h2>
                 <div className='w-full'>

@@ -14,10 +14,14 @@ export default function OtherServices() {
                     <h2 className="text-xl">Other Services</h2>
                 </div>
                 <div className="section__content-container">
-                    <p className='big-paragraph'>Además de las opciones anteriores, ofrezco servicios personalizados diseñados para satisfacer las necesidades de eventos que requieren una atención más detallada y una producción de alto nivel. Ya sea que estés organizando un evento corporativo, un lanzamiento de producto o una celebración especial, estoy preparado para ofrecerte soluciones adaptadas a tus requerimientos específicos.</p>
-                    <p className='big-paragraph'>Contáctame para conocer las opciones avanzadas y encontrar la cobertura ideal para tu ocasión.</p>
-                    <p className='big-paragraph'>In addition to the above options, I offer customized services designed to meet the needs of events that require more detailed attention and high-level production. Whether you are organizing a corporate event, a product launch or a special celebration, I am prepared to offer solutions tailored to your specific requirements.</p>
-                    <p className='big-paragraph'>Contact me to learn about advanced options and find the ideal coverage for your occasion.</p>
+                    <div>
+                        <p className='paragraph'>Además de las opciones anteriores, ofrezco servicios personalizados diseñados para satisfacer las necesidades de eventos que requieren una atención más detallada y una producción de alto nivel. Ya sea que estés organizando un evento corporativo, un lanzamiento de producto o una celebración especial, estoy preparado para ofrecerte soluciones adaptadas a tus requerimientos específicos.</p>
+                        <p className='paragraph'>Contáctame para conocer las opciones avanzadas y encontrar la cobertura ideal para tu ocasión.</p>
+                    </div>
+                    <div className="mt-[35px]">
+                        <p className='paragraph'>In addition to the above options, I offer customized services designed to meet the needs of events that require more detailed attention and high-level production. Whether you are organizing a corporate event, a product launch or a special celebration, I am prepared to offer solutions tailored to your specific requirements.</p>
+                        <p className='paragraph'>Contact me to learn about advanced options and find the ideal coverage for your occasion.</p>
+                    </div>
                 </div>
             </section>
 

@@ -151,7 +151,7 @@ export default function Graduations() {
                 </div>
             </section>
 
-            <section className="section text-center bg-white">
+            <section className="section text-center">
                 <div className="max-w-[1250px] md:min-h-[400px] lg:h-[400px] mx-auto flex flex-col justify-center items-center gap-[35px] md:gap-[25px] md:flex-row md:justify-between md:items-start">
                     <GruaduationPriceCard
                         name="Graduación Standard"

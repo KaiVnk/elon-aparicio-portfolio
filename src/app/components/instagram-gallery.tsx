@@ -20,20 +20,11 @@ export default function InstagramGallery() {
           </Link>
           <Link href="https://www.instagram.com/elon.aparicio" target="_blank" className='h-[250px] w-full md:h-full md:w-auto bg-[#f8f8f8]'>
             <Image 
-                src="/n02.jpg" 
-                alt="n02" 
+                src="/n06.jpg" 
+                alt="n06" 
                 className='object-cover w-full h-full' 
-                width={2612}
-                height={4640}
-            />
-          </Link>
-          <Link href="https://www.instagram.com/elon.aparicio" target="_blank" className='h-[250px] w-full md:h-full md:w-auto bg-[#f8f8f8]'>
-            <Image 
-                src="/n03.jpg" 
-                alt="n03" 
-                className='object-cover w-full h-full' 
-                width={720}
-                height={1280}
+                width={3516}
+                height={6247}
             />
           </Link>
           <Link href="https://www.instagram.com/elon.aparicio" target="_blank" className='h-[250px] w-full md:h-full md:w-auto bg-[#f8f8f8]'>
@@ -47,6 +38,15 @@ export default function InstagramGallery() {
           </Link>
           <Link href="https://www.instagram.com/elon.aparicio" target="_blank" className='h-[250px] w-full md:h-full md:w-auto bg-[#f8f8f8]'>
             <Image 
+                src="/n03.jpg" 
+                alt="n03" 
+                className='object-cover w-full h-full' 
+                width={720}
+                height={1280}
+            />
+          </Link>
+          <Link href="https://www.instagram.com/elon.aparicio" target="_blank" className='h-[250px] w-full md:h-full md:w-auto bg-[#f8f8f8]'>
+            <Image 
                 src="/n05.jpg" 
                 alt="n05" 
                 className='object-cover w-full h-full' 
@@ -54,13 +54,13 @@ export default function InstagramGallery() {
                 height={1350}
             />
           </Link>
-          <Link href="https://www.instagram.com/elon.aparicio" target="_blank" className='h-[250px] w-full md:h-full md:w-auto bg-[#f8f8f8]'>
+          <Link href="https://www.instagram.com/elon.aparicio" target="_blank" className='h-[250px] w-full md:h-full md:w-auto bg-[#f8f8f8] block md:hidden'>
             <Image 
-                src="/n06.jpg" 
-                alt="n06" 
+                src="/n02.jpg" 
+                alt="n02" 
                 className='object-cover w-full h-full' 
-                width={3516}
-                height={6247}
+                width={1440}
+                height={1081}
             />
           </Link>
         </div>

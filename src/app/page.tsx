@@ -3,6 +3,7 @@ import Header from '@/app/components/header';
 import InstagramGallery from '@/app/components/instagram-gallery';
 import Image from 'next/image';
 import LinkCard from './components/link-card';
+import TestimonialCarousel from './components/testimonials-carousel';
 
 export default function Home() {
   return (
@@ -52,12 +53,133 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section">
+        <div className='text-center font-light px-[15px]'>
+          <h2 className='text-3xl md:text-4xl'>Así es como puedo ayudarte</h2>
+        </div>
+        <div className='max-w-[1250px] mx-auto grid grid-cols-2 md:grid-cols-5 md:auto-rows-[325px] gap-[15px] py-[25px]'>
+          <div className='w-full max-w-[1250px] flex flex-col justify-center items-start bg-[#e5e5db] mx-auto p-8 col-span-2 md:col-span-3'>
+            <ul className="">
+              <li className="flex justify-stat items-center gap-1 my-3">
+                <Image 
+                  src='/icons/check_circle.svg' 
+                  alt='Check Circle' 
+                  width={30} 
+                  height={30} 
+                  className='w-[30px] h-[30px]'
+                />
+                Máxima calidad en todas tus fotos y videos (4k Full HD)
+              </li>
+              <li className="flex justify-stat items-center gap-1 my-3">
+                <Image 
+                  src='/icons/check_circle.svg' 
+                  alt='Check Circle' 
+                  width={30} 
+                  height={30} 
+                  className='w-[30px] h-[30px]'
+                />
+                Asesoría personalizada para cada proyecto
+              </li>
+              <li className="flex justify-stat items-center gap-1 my-3">
+                <Image 
+                  src='/icons/check_circle.svg' 
+                  alt='Check Circle' 
+                  width={30} 
+                  height={30} 
+                  className='w-[30px] h-[30px]'
+                />
+                Fotografía de eventos, retratos, paisajes y productos para negocios y redes sociales
+              </li>
+              <li className="flex justify-stat items-center gap-1 my-3">
+                <Image 
+                  src='/icons/check_circle.svg' 
+                  alt='Check Circle' 
+                  width={30} 
+                  height={30} 
+                  className='w-[30px] h-[30px]'
+                />
+                Estilo de edición basado en tus necesidades
+              </li>
+              <li className="flex justify-stat items-center gap-1 my-3">
+                <Image 
+                  src='/icons/check_circle.svg' 
+                  alt='Check Circle' 
+                  width={30} 
+                  height={30} 
+                  className='w-[30px] h-[30px]'
+                />
+                Entregas en menos de 1 semana
+              </li>
+              <li className="flex justify-stat items-center gap-1 my-3">
+                <Image 
+                  src='/icons/check_circle.svg' 
+                  alt='Check Circle' 
+                  width={30} 
+                  height={30} 
+                  className='w-[30px] h-[30px]'
+                />
+                Videograbaciones profesionales (Cámara y Dron)
+              </li>
+            </ul>
+          </div>
+          <Image 
+            src="/all-xanat.JPG" 
+            alt='Xanat'
+            width={1500} 
+            height={2250}
+            className='w-full h-full bg-[#f8f8f8] object-cover col-span-2'
+          />
+          <Image 
+            src="/sincerely.jpg" 
+            alt='Sincerely'
+            width={1500} 
+            height={2250}
+            className='w-full h-full bg-[#f8f8f8] object-cover'
+          />
+          <Image 
+            src="/xanat.JPG" 
+            alt='Xanat'
+            width={1500} 
+            height={2250}
+            className='w-full h-full bg-[#f8f8f8] object-cover hidden md:block'
+          />
+          <Image 
+            src="/ricky-walias.JPG" 
+            alt='Ricky Walias'
+            width={1500} 
+            height={2250}
+            className='w-full h-full bg-[#f8f8f8] object-cover block md:hidden'
+          />
+          <Image 
+            src="/marce&mau.JPG" 
+            alt='Marce & Mau'
+            width={1500} 
+            height={2250}
+            className='w-full h-full bg-[#f8f8f8] object-cover col-span-2 '
+          />
+          <Image 
+            src="/ricky-walias.JPG" 
+            alt='Ricky Walias'
+            width={1500} 
+            height={2250}
+            className='w-full h-full bg-[#f8f8f8] object-cover hidden md:block'
+          />
+        </div>
+      </section>
+
+      <section className='max-w-[2000px] mx-auto py-[50px]'>
+        <div className='text-center font-light px-[15px]'>
+          <h2 className='text-3xl md:text-4xl'>Checa lo que los demás dicen sobre mi trabajo</h2>
+        </div>
+        <TestimonialCarousel cardWidth="375px" speed={60} />
+      </section>
+
       <section className='section'>
         <div className='max-w-[1250px] mx-auto grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-[15px]'>
           <LinkCard 
             slug='/portfolio'
             urlImage='portfolio-background.jpg'
-            name='Mi Portafolio / Portfolio'
+            name='Portafolio / Work'
           />
           <LinkCard 
             slug='/investment'

@@ -20,7 +20,7 @@ export default function LinkCard({ slug, urlImage, name }: LinkCardProps) {
                 />
                 <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-60 z-10"></div>
                 <div className='h-full relative z-20 flex flex-col justify-evenly items-center text-center md:hover:bg-[rgba(255,255,255,0.1)]'>
-                  <h2 className="text-3xl font-light">{name}</h2>
+                  <h2 className="text-2xl font-light">{name}</h2>
                   <p className="text-xs uppercase tracking-[2px]">Click aquí / Click here</p>
                 </div>
             </div>

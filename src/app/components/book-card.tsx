@@ -12,7 +12,6 @@ export default function BookCard({ slug, urlImage, bookName, direction }: BookCa
     return(
         <div className={`flex flex-col text-center gap-[10px] ${direction} md:h-[400px]`}>
             <Link href={slug} target='_blank' className='relative w-full h-[400px] bg-[#f8f8f8]'>
-                <div className='absolute top-0 left-0 right-0 w-full h-full bg-black opacity-30 z-10'></div>
                 <div className='absolute top-0 left-0 right-0 w-full h-full z-20 md:hover:bg-[rgba(255,255,255,0.1)]'></div>
                 <Image 
                     src={urlImage} 
